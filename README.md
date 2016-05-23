@@ -4,6 +4,8 @@
 
 I was feeling a bit nostalgic for the old WordPerfect Function key templates, so I put this together. I tried to stay true to the feel of the originals. "for IBM Personal Computers"
 
+[Take a look!](http://htmlpreview.github.io/?https://github.com/jbfraser1/KeyboardShortcuts/blob/master/Standard%20Keyboard/VS2015.html)
+
 ## Why Html? ##
 I decided to use HTML for the page layout so that I could use Version Control Magic with decent diffs. It also gave me a chance to dig into some css fun.
 
