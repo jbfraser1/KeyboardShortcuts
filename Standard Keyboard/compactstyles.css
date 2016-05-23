@@ -1,0 +1,188 @@
+
+.instructions {
+    font-size: .22in;
+    padding: .5in;
+}
+
+.entireBar {
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-size: .11in;
+    position: relative;
+    display: flex;
+    height: 100%;
+    overflow: hidden;    
+    white-space: nowrap;  
+}
+
+.titleBox {
+    float: left;
+    width: 1.5in;
+    white-space: normal;
+    text-align: center;
+}
+
+.title {
+    font-size: .22in;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.gitLink {
+    position: absolute;
+    width: 1.5in;
+    bottom: .15in;
+}
+
+.keyGroup {
+    border-style: solid;
+    border-width: 0 .01in;
+    border-color: #888;
+    width: .73in;
+    height: 1.2in;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.fourKeyGroup {
+    display: flex;
+}
+
+.betweenGroups {
+    border-style: solid;
+    border-width: 0 .01in;
+    border-color: #888;
+    width: .31in;
+    height: 1.2in;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ctrlShift {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0in;
+    color: lightblue;
+}
+
+.ctrlAlt {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: .25in;
+    color: pink;
+}
+
+.shiftAlt {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: .5in;
+    color: lightgreen;
+}
+
+.ctrl {
+    position: absolute;
+    width: 100%;
+    top: .0in;
+    color: red;
+}
+
+.alt {
+    position: absolute;
+    width: 100%;
+    top: .25in;
+    color: blue;
+}
+
+.shift {
+    position: absolute;
+    width: 100%;
+    top: .5in;
+    color: green;
+}
+
+.noModifiers {
+    position: absolute;
+    width: 100%;
+    top: .75in;
+}
+
+.keyName {
+    position: absolute;
+    width: 100%;
+    top: 1in;
+    font-weight: light;
+    font-style: italic;
+}
+
+.modRow {
+    white-space: normal;
+}
+
+@media print {
+    @page {
+        resize: none;
+    }
+    .hiddenForPrinting {
+        display: none;
+    }
+}
+
+@media print and (min-width: 11in) {
+    .entireBar {
+        display: flex; 
+    }
+    
+    .fourKeyGroup {
+        display: flex;
+        padding-bottom: 0in;
+    }
+}
+
+@media print and (max-width: 11in) and (min-width: 7.8in) {
+    @page {
+        margin-left: 0.05in;
+        margin-right: 0.05in;
+    }
+        
+    .titleBox {
+        display: none;
+    }
+    
+    .entireBar {
+        display: flex; 
+    }
+    
+    .fourKeyGroup {
+        display: flex;
+        padding-bottom: 0in;
+    }
+}
+   
+@media print and (max-width: 7.8in) {
+    .titleBox {
+        display: none;
+    }
+    .entireBar {
+        display: inline-block; 
+    }
+    
+    .fourKeyGroup {
+        display: flex;
+        padding-bottom: .75in;
+    }
+
+}
+
+
+
+
