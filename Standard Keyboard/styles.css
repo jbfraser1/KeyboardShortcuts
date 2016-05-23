@@ -40,8 +40,8 @@
 .keyGroup {
     border-style: solid;
     border-width: 0 .01in;
-    border-color: #aaa;
-    width: .75in;
+    border-color: #888;
+    width: .73in;
     height: 2in;
     display: inline-block;
     text-align: center;
@@ -56,8 +56,8 @@
 .betweenGroups {
     border-style: solid;
     border-width: 0 .01in;
-    border-color: #aaa;
-    width: .33in;
+    border-color: #888;
+    width: .31in;
     height: 2in;
     display: inline-block;
     text-align: center;
@@ -126,16 +126,15 @@
 }
 
 @media print {
+    @page {
+        resize: none;
+    }
     .hiddenForPrinting {
         display: none;
     }
 }
 
 @media print and (min-width: 11in) {
-    @page {
-        resize: none;
-    }
-    
     .entireBar {
         display: flex; 
     }
@@ -148,7 +147,6 @@
 
 @media print and (max-width: 11in) and (min-width: 7.8in) {
     @page {
-        resize: none;
         margin-left: 0.05in;
         margin-right: 0.05in;
     }
